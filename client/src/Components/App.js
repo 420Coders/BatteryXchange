@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
 import Auth from "./utils/auth";
-import HomePage from "../pages/HomePage";
+import Authentication from "./Authentication";
+
+import PayPalPage from "../pages/PayPalPage";
 import DashboardPage from "../pages/DashboardPage";
 import LoginPage from "../pages/LoginPage";
-import Authentication from "./Authentication";
 
 class App extends Component {
 	state = {
@@ -29,14 +30,13 @@ class App extends Component {
 					<header>
 						<Authentication token={this.state.token} />
 					</header>
-					<Route exact path="/" component={HomePage} />
-					<Route exact path="/login" render={() => <LoginPage token={this.state.token} />} />
+					<Route exact path="/" render={() => <LoginPage token={this.state.token} />} />
 					<PrivateRoute path="/dashboard" component={DashboardPage} token={this.state.token} />
+					<PrivateRoute path="/payment" component={PayPalPage} token={this.state.token} />
 				</div>
 			</BrowserRouter>
 		)
 	}
-
 }
 
 const PrivateRoute = ({ component: Component, token, ...rest }) => (
@@ -45,7 +45,7 @@ const PrivateRoute = ({ component: Component, token, ...rest }) => (
 			<Component {...props} token={token} />
 		) : (
 				<Redirect to={{
-					pathname: '/login',
+					pathname: '/',
 					state: { from: props.location }
 				}} />
 			)
