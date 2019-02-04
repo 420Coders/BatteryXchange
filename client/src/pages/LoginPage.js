@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 
 import Auth from "../components/utils/auth";
 
@@ -53,7 +53,11 @@ class LoginPage extends Component {
                     <input type="password" name="password" placeholder="password" onChange={this.handleInputChange} />
                     <button>Login</button>
                 </form>
+                <button>
+                    <Link to="/signup">Sign Up Here</Link>
+                </button>
             </div>
+
         )
     }
 }
