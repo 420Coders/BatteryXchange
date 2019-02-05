@@ -1,0 +1,43 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #daefd9;
+  }
+
+  .loginDiv {
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .loginSec {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    height: 55%;
+    width: 50%;
+    transform: translate(-50%, 60%);
+  }
+
+  #inputBox {
+    border-radius: 4px;
+}
+
+#pagetitle {
+  transform: translate(0%, -50%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 60px;
+}
+
+.Xlogo-div{
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  left: 50%;
+  width: 50%;
+  height: 22%;
+  transform: translate(-50%, 50%);
+  position: absolute;
+}

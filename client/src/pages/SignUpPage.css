@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #daefd9;
+  }
+
+  .signupDiv {
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .signupSec {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    height: 55%;
+    width: 50%;
+    transform: translate(-50%, 40%);
+  }
+
+  #pagetitle {
+    transform: translate(0%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: red
+  }
+  #inputBox {
+      border-radius: 4px;
+  }
