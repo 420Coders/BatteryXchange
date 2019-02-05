@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-
+import "./SignUpPage.css"
 import API from "../components/utils/API";
 import Auth from "../components/utils/auth";
 
 class SignUpPage extends Component {
+
     state = {
         email: "",
         password: "",
+        password1: "",
         redirect: false
     }
 
@@ -19,9 +21,21 @@ class SignUpPage extends Component {
         });
     }
 
+    handleConfirmPassword = (event) => {
+        if (event.target.value !== this.state.password) {
+            alert('error');
+            this.setState({password1: event.target.value})
+        }
+    }
+
     handleSubmit = event => {
         event.preventDefault();
 
+        if(this.state.password !== this.state.password1){
+            alert("the passwords does not match")
+            return false
+        }
+        
         if(this.state.email && this.state.password) {
             API.newUser({
                 email: this.state.email,
@@ -67,14 +81,26 @@ class SignUpPage extends Component {
             return <Redirect to="/payment" />
         }
         return (
-            <div>
-                <h1>SignUp</h1>
+            <div className="signupDiv">
+                <div className="signupSec">
+                <h1 id="pagetitle">Sign Up</h1>
+                <br/>
+                <br/>
                 {this.handleLogin()}
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
-                    <input type="password" name="password" placeholder="password" onChange={this.handleInputChange} />
-                    <button> SignUp </button>
+                    <input id="inputBox" required type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
+                    <br/>
+                    <br/>
+                    <input id="inputBox" required type="password" name="password" placeholder="Password" onChange={this.handleInputChange} />
+                    <br/>
+                    <br/>
+                    <input id="inputBox" required type="password" name="password1" placeholder="Confirm Password" onChange={this.handleInputChange} />
+                    <br/>
+                    <br/>
+                    <br/>
+                    <button class="btn btn-warning"> Sign Up </button>
                 </form>
+                </div>
             </div>
         )
     }

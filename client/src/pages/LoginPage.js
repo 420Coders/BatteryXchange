@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Redirect, Link } from "react-router-dom";
-
+import "./LoginPage.css";
 import Auth from "../components/utils/auth";
+import Xlogo from '../components/images/Xlogo.webp';
 
 class LoginPage extends Component {
     state = {
@@ -46,16 +47,33 @@ class LoginPage extends Component {
             return <Redirect to="/payment" />
         }
         return (
-            <div>
-                <h1>Login</h1>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
-                    <input type="password" name="password" placeholder="password" onChange={this.handleInputChange} />
-                    <button>Login</button>
+            <div className="loginDiv">
+
+            <div className= "Xlogo-div">
+                <img className= "Xlogo" src={Xlogo} alt="logo" />
+            </div>
+
+                <div className="loginSec">
+                {/*<h1 id="pagetitle" >Login</h1>*/}
+            
+                <form className="logform" onSubmit={this.handleSubmit}>
+                    <input id="inputBox" type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
+                    <br/>
+                    <br/>
+                    <input id="inputBox" type="password" name="password" placeholder="password" onChange={this.handleInputChange} />
+                    <br/>
+                    <br/>
+                    <button class="btn btn-success">Login</button>
                 </form>
-                <button>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <button class="btn btn-warning">
                     <Link to="/signup">Sign Up Here</Link>
                 </button>
+                </div>
             </div>
 
         )
