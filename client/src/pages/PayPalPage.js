@@ -2,14 +2,20 @@ import React, {Component} from 'react';
 import PaypalBtn from '../components/PayPalBtn';
 import Xlogo from '../components/images/Xlogo.webp';
 import "./PayPalPage.css";
-import toggleDisplay from 'react-toggle-display';
+import ToggleDisplay from 'react-toggle-display';
 
 
 class PaymentPage extends Component{
+
+    constructor() {
+        super();
+        this.state = {show: false};
+    }
+
     state = {
         amount: "" ,
-        showDiv:true
     }
+
     handleAmountInput = (event) => {
         this.setState({ amount: event.target.value })
     }
@@ -28,7 +34,7 @@ class PaymentPage extends Component{
             </div>
             
             <div className="TimeBtn">
-                <button type="button" onClick={this.handleAmountInput} value="1" class="btn btn-success btn-lg btn-block">30 Mins</button>
+                <button type="button" onClick={ () => this.handleClick()} value="1" class="btn btn-success btn-lg btn-block" data-toggle= "button">30 Mins ---> $1.00</button>
                 <br></br>
                 {/*
                 <button type="button" onClick={this.handleAmountInput} value="2" class="btn btn-success btn-lg btn-block" >1 Hour</button>
@@ -39,11 +45,9 @@ class PaymentPage extends Component{
                 */}
                 <br></br>
                 <br></br>
-                <toggleDisplay show={this.state.show}>
                     <div id="paybut">
                         <PaypalBtn />
                     </div>
-                </toggleDisplay>
             </div>
             </div>
         )

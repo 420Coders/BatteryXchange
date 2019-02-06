@@ -17,18 +17,19 @@ body{
     left: 50%;
     text-align: center;
     height: 55%;
-    width: 50%;
-    transform: translate(-50%, 60%);
+    width: 70%;
+    transform: translate(-50%, 70%);
   }
 
   #inputBox {
     border-radius: 4px;
 }
 
-#pagetitle {
+#logotitle {
   transform: translate(0%, -50%);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 60px;
+  font-size: 30px;
+  color: #E00000;
 }
 
 .Xlogo-div{

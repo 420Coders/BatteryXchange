@@ -30,7 +30,7 @@ class PaypalBtn extends Component {
  
         const client = {
             sandbox:    'AQ6SsXmGcchJD5upYokie_TXasPWK5RCQQ_-SKTdMC1hc0uA95pNG_u7XLuEDUwiMnB0zvr0Rmp2DjAb',
-            production: 'YOUR-PRODUCTION-APP-ID',
+            production: '',
         }
         return(
             <PaypalExpressBtn env={env} client={client} currency={currency} total={total} onError={onError} onSuccess={onSuccess} onCancel={onCancel} />
