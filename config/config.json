@@ -14,10 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "batteryXchange",
-    "host": "127.0.0.1",
+    "username": "fuyxuf4lvk0b15ap",
+    "password": "p7jtaw0quw4fwl5s",
+    "database": "q78cpigo71u96hw8",
+    "host": "h2cwrn74535xdazj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }
