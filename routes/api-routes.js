@@ -23,22 +23,32 @@ module.exports = function (app) {
 
     //logging in
     app.post("/api/login", (req, res) => {
-        db.User.findOne({"username" : req.body.username}, function(err, User) {
-            const response = {
-                status : 401,
-                message : "failed"
-            }
-            if(err) {
-                response.status = 401;
-                response.message = "failed";
-            }
-            if(bcrypt.compareSync(req.body.password, User.password)) {
-                response.status = 201;
-                response.message = "success";
-            } else {
-                response.status = 401;
-                response.message = "failed";
+        db.User.findOne({
+            where: {
+                email: req.body.email
+            }, function(err, res) {
+                bcrypt.compareSync(req.body.password, hash, function (err, res) {
+                    const data = {
+                        email: req.body.email,
+                        password: req.body.password
+                    }
+
+                    fetch('/login', {
+                        method: 'POST',
+                        body: JSON.stringify(data),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    }).then(res => res.json())
+                        .then(response => {
+                            //server returning "JWT ...", so we need to split off the token and then create it 
+                            // and then run it through login function in Auth
+                            const token = response.token.split(' ')[1];
+                            Auth.login(token);
+                        })
+                        .catch(error => console.error('Error:', error))
+                })
             }
         })
-    })
+    });
 }
