@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
+import { Redirect } from 'react-router-dom';
 
 
 class PaypalBtn extends Component {
@@ -23,14 +24,14 @@ class PaypalBtn extends Component {
             // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear
         }
  
-        let env = 'sandbox'; // you can set here to 'production' for production
+        let env = 'production'; // you can set here to 'production' for production
         let currency = 'USD'; // or you can set this value from your props or state
         let total = "1"; // same as above, this is the total amount (based on currency) to be paid by using Paypal express checkout
         // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
  
         const client = {
-            sandbox:    'AQ6SsXmGcchJD5upYokie_TXasPWK5RCQQ_-SKTdMC1hc0uA95pNG_u7XLuEDUwiMnB0zvr0Rmp2DjAb',
-            production: '',
+            sandbox:    '',
+            production: 'AWbk7IkbAfH3i9424rxxQEMYw-v7Yn20gud7HPRkXmvyAOu1i8Qvm5emSD0ceAYdRXE9ONd438BxOwBg',
         }
         return(
             <PaypalExpressBtn env={env} client={client} currency={currency} total={total} onError={onError} onSuccess={onSuccess} onCancel={onCancel} />
