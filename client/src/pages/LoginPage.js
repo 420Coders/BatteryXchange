@@ -54,7 +54,7 @@ class LoginPage extends Component {
             </div>
 
                 <div className="loginSec">
-                {/*<h1 id="pagetitle" >Login</h1>*/}
+                <h1 id="logotitle" >BATTERYXCHANGE</h1>
             
                 <form className="logform" onSubmit={this.handleSubmit}>
                     <input id="inputBox" type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />

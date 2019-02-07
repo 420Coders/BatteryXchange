@@ -20,7 +20,7 @@ body{
     width: 100vw;
     position: absolute;
     height: 31.5%;
-    width: 41%;
+    width: 60%;
     left: 50%;
     margin-top:200px;
     transform: translate(-50%, 50%);
@@ -35,4 +35,10 @@ body{
     height: 22%;
     transform: translate(-50%, 50%);
     position: absolute;
+  }
+
+  .selection-buttons .btn-info:hover, .btn-info:focus, .btn btn-success btn-lg btn-block:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #FFF;
+    background-color: #00CC66;
+    border-color: #fff; /* 00b75b */ 
   }
