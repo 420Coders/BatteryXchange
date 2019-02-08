@@ -33,7 +33,7 @@ class PaymentPage extends Component{
             </div>
             
             <div className="TimeBtn">
-                <button type="button" onClick={ () => this.handleClick()} value="1" class="btn btn-success btn-lg btn-block" data-toggle= "button">30 Mins ---> $1.00</button>
+                <button type="button" onClick={ () => this.handleClick()} value="1" className="btn btn-success btn-lg btn-block" data-toggle= "button">30 Mins ---> $1.00</button>
                 <br></br>
                 {/*
                 <button type="button" onClick={this.handleAmountInput} value="2" class="btn btn-success btn-lg btn-block" >1 Hour</button>

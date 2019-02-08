@@ -7,6 +7,7 @@ import Authentication from "./Authentication";
 import PayPalPage from "./pages/PayPalPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import ThankYouPage from "./pages/ThankYouPage";
 
 class App extends Component {
 	state = {
@@ -34,7 +35,7 @@ class App extends Component {
 					<Route exact path="/" render={() => <LoginPage token={this.state.token} />} />
 					<Route exact path="/signup" render={() => <SignUpPage token={this.state.token} />} />
 					<PrivateRoute path="/payment" component={PayPalPage} token={this.state.token} />
-					
+					<PrivateRoute path="/thankyou" component={ThankYouPage} token={this.state.token} />
 				</div>
 			</BrowserRouter>
 		)
