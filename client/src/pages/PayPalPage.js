@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PaypalBtn from './PayPalBtn';
-import Xlogo from './Xlogo.webp';
+import Xlogo from './Xlogo.jpeg';
 import "./PayPalPage.css";
 
 
@@ -29,7 +29,7 @@ class PaymentPage extends Component{
         return(
             <div className= "Pages">
             <div className= "Xlogo-div">
-                <img className= "Xlogo" src={Xlogo} />
+                <img className= "Xlogo" src={Xlogo} alt=""/>
             </div>
             
             <div className="TimeBtn">

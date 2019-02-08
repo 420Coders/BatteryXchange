@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect, Link } from "react-router-dom";
 import "./LoginPage.css";
 import Auth from "../auth";
-import Xlogo from './Xlogo.webp';
+import Xlogo from './Xlogo.jpeg';
 
 class LoginPage extends Component {
     state = {
@@ -50,7 +50,7 @@ class LoginPage extends Component {
             <div className="loginDiv">
 
             <div className= "Xlogo-div">
-                <img className= "Xlogo" src={Xlogo} />
+                <img className= "Xlogo" src={Xlogo} alt=""/>
             </div>
 
                 <div className="loginSec">
