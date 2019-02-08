@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
 import Auth from "./components/utils/auth";
-import Authentication from "./components/Authentication";
+import Authentication from "./Authentication";
 
 import PayPalPage from "./pages/PayPalPage";
 import LoginPage from "./pages/LoginPage";
