@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Mern Demo",
   "main": "server.js",
-  "engines": {
-    "npm": "5.6.0",
-    "node": "8.11.4"
-  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -26,19 +22,14 @@
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
-    "bootstrap": "^4.2.1",
     "dotenv": "^6.2.0",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.4.0",
     "morgan": "^1.9.1",
-    "mysql2": "^1.6.4",
+    "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "react-bootstrap": "^1.0.0-beta.5",
-    "react-paypal-express-checkout": "^1.0.5",
-    "react-router-dom": "^4.3.1",
-    "react-toggle-display": "^2.2.0",
     "sequelize": "^4.42.0"
   }
 }
