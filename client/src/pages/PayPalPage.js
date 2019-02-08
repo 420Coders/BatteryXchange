@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PaypalBtn from './PayPalBtn';
-import Xlogo from './Xlogo1.png';
+import Xlogo from './Xlogo2.png';
 import "./PayPalPage.css";
 
 

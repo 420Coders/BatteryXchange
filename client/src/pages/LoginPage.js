@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect, Link } from "react-router-dom";
 import "./LoginPage.css";
 import Auth from "../auth";
-import Xlogo from './Xlogo1.png';
+import Xlogo from './Xlogo2.png';
 
 class LoginPage extends Component {
     state = {
