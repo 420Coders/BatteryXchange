@@ -2,12 +2,12 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
-import Auth from "./utils/auth";
-import Authentication from "./Authentication";
+import Auth from "./src/components/utils/auth";
+import Authentication from "./src/components/Authentication";
 
-import PayPalPage from "../pages/PayPalPage";
-import LoginPage from "../pages/LoginPage";
-import SignUpPage from "../pages/SignUpPage";
+import PayPalPage from "./src/pages/PayPalPage";
+import LoginPage from "./src/pages/LoginPage";
+import SignUpPage from "./src/pages/SignUpPage";
 
 class App extends Component {
 	state = {
