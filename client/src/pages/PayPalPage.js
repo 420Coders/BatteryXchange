@@ -29,7 +29,7 @@ class PaymentPage extends Component{
         return(
             <div className= "Pages">
             <div className= "Xlogo-div">
-                <img className= "Xlogo" src={Xlogo} alt="logo" />
+                <img className= "Xlogo" src={Xlogo} />
             </div>
             
             <div className="TimeBtn">

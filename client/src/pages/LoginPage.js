@@ -50,7 +50,7 @@ class LoginPage extends Component {
             <div className="loginDiv">
 
             <div className= "Xlogo-div">
-                <img className= "Xlogo" src={Xlogo} alt="logo" />
+                <img className= "Xlogo" src={Xlogo} />
             </div>
 
                 <div className="loginSec">
