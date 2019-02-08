@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Auth from './components/utils/auth';
+import Auth from './auth';
 
 const Authentication = props => (
     props.token

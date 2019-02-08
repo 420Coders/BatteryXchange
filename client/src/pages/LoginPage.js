@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Redirect, Link } from "react-router-dom";
 import "./LoginPage.css";
-import Auth from "../components/utils/auth";
+import Auth from "../auth";
 import Xlogo from '../components/images/Xlogo.webp';
 
 class LoginPage extends Component {

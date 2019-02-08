@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import "./SignUpPage.css"
 import API from "../components/utils/API";
-import Auth from "../components/utils/auth";
+import Auth from "../auth";
 
 class SignUpPage extends Component {
 
