@@ -1,4 +1,1 @@
-node_modules/
-build/
-.envnode_modules
-npm-debug.log
+node_modules
