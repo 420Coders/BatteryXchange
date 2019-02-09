@@ -48,14 +48,12 @@ class LoginPage extends Component {
         }
         return (
             <div className="loginDiv">
-
             <div className= "Xlogo-div">
                 <img className= "Xlogo" src={Xlogo} alt=""/>
+                <br/>
+              <h1 id="logotitle" >BATTERYXCHANGE</h1>
             </div>
-
                 <div className="loginSec">
-                <h1 id="logotitle" >BATTERYXCHANGE</h1>
-            
                 <form className="logform" onSubmit={this.handleSubmit}>
                     <input id="inputBox" type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
                     <br/>
