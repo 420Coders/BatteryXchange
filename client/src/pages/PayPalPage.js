@@ -45,7 +45,7 @@ class PaymentPage extends Component{
                 <br></br>
                 <br></br>
                     <div id="paybut">
-                        <PaypalBtn />
+                        <PaypalBtn/>
                     </div>
             </div>
             </div>
