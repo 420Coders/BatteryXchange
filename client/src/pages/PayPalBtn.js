@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { withRouter } from 'react-router-dom';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 
 class PaypalBtn extends Component {
@@ -8,7 +9,8 @@ class PaypalBtn extends Component {
                     console.log("The payment was succeeded!", payment);
                     // You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
                     //once payment is successful send them to ThankYouPage
-        }
+                    this.props.history.push('/thankyou')
+        }           
  
         const onCancel = (data) => {
             // User pressed "cancel" or close Paypal's popup!
@@ -37,4 +39,4 @@ class PaypalBtn extends Component {
         )
     }
 }
-export default PaypalBtn
+export default withRouter (PaypalBtn)
