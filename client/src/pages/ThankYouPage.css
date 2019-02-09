@@ -10,20 +10,24 @@
 	left: 50%;
 	text-align: center;
 	height: 55%;
-	width: 70%;
-	transform: translate(-50%, 15%);
+	width: 85%;
+	transform: translate(-50%, 20%);
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: darkslategray;
   }
 
+  .thanksCont p{
+    color: darkslategrey;
+  }
+
   .Xlogo-div-thanks{
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   left: 50%;
   width: 50%;
   height: 22%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -75%);
   position: absolute;
 }
 
