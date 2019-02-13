@@ -34,14 +34,13 @@ class App extends Component {
 					</header>
 					<Route exact path="/" render={() => <LoginPage token={this.state.token} />} />
 					<Route exact path="/signup" render={() => <SignUpPage token={this.state.token} />} />
-					<Route path="/payment" component={PayPalPage} token={this.state.token} />
-					<Route path="/thankyou" component={ThankYouPage} token={this.state.token} />
+					<PrivateRoute path="/payment" component={PayPalPage} token={this.state.token} />
+					<PrivateRoute path="/thankyou" component={ThankYouPage} token={this.state.token} />
 				</div>
 			</BrowserRouter>
 		)
 	}
 }
-{/*
 const PrivateRoute = ({ component: Component, token, ...rest }) => (
 	<Route {...rest} render={props => (
 		token ? (
@@ -54,5 +53,4 @@ const PrivateRoute = ({ component: Component, token, ...rest }) => (
 			)
 	)} />
 );    
-			*/}
 export default App;
