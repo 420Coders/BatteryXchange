@@ -23,8 +23,9 @@ body{
     width: 60%;
     left: 50%;
     margin-top:200px;
-    transform: translate(-50%, 50%);
-
+    transform: translate(-50%, 30%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkslategray;
   }
   .Xlogo-div{
     text-align: center;

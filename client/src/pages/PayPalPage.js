@@ -31,18 +31,23 @@ class PaymentPage extends Component{
             <div className= "Xlogo-div">
                 <img className= "Xlogo" src={Xlogo} alt=""/>
             </div>
-            
-            <div className="TimeBtn">
+                <div className="TimeBtn">
+                <div class="alert alert" role="alert">
+                <h3 class="alert-heading">$1.00  | 30 mins</h3>
+                <hr/>
+                <h5 class="alert-heading">Please click on the pay pal button below to checkout!</h5>
+                <hr/>
+                <p></p>
+                </div>
+                {/*
                 <button type="button" onClick={ () => this.handleClick()} value="1" className="btn btn-success btn-lg btn-block" data-toggle= "button">30 Mins ---> $1.00</button>
                 <br></br>
-                {/*
                 <button type="button" onClick={this.handleAmountInput} value="2" class="btn btn-success btn-lg btn-block" >1 Hour</button>
                 <br></br>
                 <button type="button" onClick={this.handleAmountInput} value="3" class="btn btn-success btn-lg btn-block">1.5 Hour</button>
                 <br></br>
                 <button type="button" onClick={this.handleAmountInput} value="4" class="btn btn-success btn-lg btn-block">2 Hours</button>
                 */}
-                <br></br>
                 <br></br>
                     <div id="paybut">
                         <PaypalBtn/>
