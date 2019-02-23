@@ -48,6 +48,11 @@ class PaymentPage extends Component{
                 <br></br>
                 <button type="button" onClick={this.handleAmountInput} value="4" class="btn btn-success btn-lg btn-block">2 Hours</button>
                 */}
+                <div class="container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                </div>
                 <br></br>
                     <div id="paybut">
                         <PaypalBtn/>
