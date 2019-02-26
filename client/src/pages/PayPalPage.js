@@ -33,7 +33,7 @@ class PaymentPage extends Component{
             </div>
                 <div className="TimeBtn">
                 <div class="alert alert" role="alert">
-                <h3 class="alert-heading">$1.00  | 30 mins</h3>
+                <h3 class="alert-heading">$2.00  | 30 mins</h3>
                 <hr/>
                 <h5 class="alert-heading">Please click on the pay pal button below to checkout!</h5>
                 <hr/>
