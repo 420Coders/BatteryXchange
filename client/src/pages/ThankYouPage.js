@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Xlogo from './Xlogo2.png';
+import Timer from 'react-compound-timer'
 
 import "./ThankYouPage.css";
 
@@ -29,7 +30,19 @@ class ThankYouPage extends Component {
             </div>
             <div class="alert alert-danger" role="alert">
                  <hr/>   
-                 <h5 class="alert-heading">After 30 minutes are up, please return the battery to it's original location</h5>
+            <Timer
+                initialTime={60000*30}
+                direction="backward"
+                startImmediately={true}
+            >
+            {() => (
+            <React.Fragment>
+            <Timer.Minutes /> minutes &nbsp;
+            <Timer.Seconds /> seconds 
+            </React.Fragment>
+            )}
+            </Timer>
+                 <h5 class="alert-heading">After timer runs out, please return the battery to it's original location</h5>
                 <hr/>
             </div>   
             </div>                     
