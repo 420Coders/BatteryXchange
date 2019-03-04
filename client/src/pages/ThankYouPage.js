@@ -30,7 +30,7 @@ class ThankYouPage extends Component {
             </div>
             <div class="alert alert-danger" role="alert">
                  <hr/>   
-            <Timer
+            {/* <Timer
                 initialTime={60000*30}
                 direction="backward"
                 startImmediately={true}
@@ -41,8 +41,8 @@ class ThankYouPage extends Component {
             <Timer.Seconds /> seconds 
             </React.Fragment>
             )}
-            </Timer>
-                 <h5 class="alert-heading">After timer runs out, please return the battery to it's original location</h5>
+            </Timer> */}
+                 <h5 class="alert-heading">After 30 minutes runs out, please return the battery to it's original location</h5>
                 <hr/>
             </div>   
             </div>                     
