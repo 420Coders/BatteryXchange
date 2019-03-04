@@ -88,7 +88,7 @@ class SignUpPage extends Component {
                 <br/>
                 {this.handleLogin()}
                 <form onSubmit={this.handleSubmit}>
-                    <input id="inputBox" required type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
+                    <input id="inputBox" required type="text" name="email" placeholder="Phone Number" onChange={this.handleInputChange} />
                     <br/>
                     <br/>
                     <input id="inputBox" required type="password" name="password" placeholder="Password" onChange={this.handleInputChange} />

@@ -55,7 +55,7 @@ class LoginPage extends Component {
             </div>
                 <div className="loginSec">
                 <form className="logform" onSubmit={this.handleSubmit}>
-                    <input id="inputBox" type="text" name="email" placeholder="Email" onChange={this.handleInputChange} />
+                    <input id="inputBox" type="text" name="email" placeholder="Phone Number" onChange={this.handleInputChange} />
                     <br/>
                     <br/>
                     <input id="inputBox" type="password" name="password" placeholder="password" onChange={this.handleInputChange} />
