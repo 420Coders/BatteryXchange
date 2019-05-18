@@ -78,7 +78,7 @@ class SignUpPage extends Component {
 
     render() {
         if (this.props.token) {
-            return <Redirect to="/thankyou" />
+            return <Redirect to="/payment" />
         }
         return (
             <div className="signupDiv">
