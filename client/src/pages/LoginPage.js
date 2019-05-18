@@ -44,7 +44,7 @@ class LoginPage extends Component {
 
     render() {
         if (this.props.token) {
-            return <Redirect to="/payment" />
+            return <Redirect to="/thankyou" />
         }
         return (
             <div className="loginDiv">
